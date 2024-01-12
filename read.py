@@ -11,5 +11,13 @@ print('檔案讀取完畢，總共有', len(data), '筆資料')
 sum_len = 0
 for d in data:
 	sum_len = sum_len + len(d)
+print('每筆留言的平均長度為', sum_len/len(data), '個字元')
 
-print('每筆留言的平均長度為', sum_len/len(data), '個字')
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('其中有', len(new), '筆留言長度少於100個字元')
+print(new[0])
+print(len(new[0]))
+
