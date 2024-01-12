@@ -21,3 +21,10 @@ print('其中有', len(new), '筆留言長度少於100個字元')
 print(new[0])
 print(len(new[0]))
 
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('其中有', len(good), '筆留言中提到good')
+print(good[0])
